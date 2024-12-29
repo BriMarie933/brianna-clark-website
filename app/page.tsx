@@ -4,7 +4,9 @@ export default function Home() {
   return (
     <>
       <section id="hero" className="bg-black text-center py-16">
-        <h1 className="text-5xl font-bold">Brianna Clark&apos;s Corner of the World</h1>
+        <div className="parallax">
+          <h1 className="text-5xl font-bold">Brianna Clark's Corner of the World</h1>
+        </div>
         <p className="mt-4 text-lg">Welcome to my collection of art, photography, and creativity!</p>
       </section>
 
@@ -86,6 +88,77 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section id="music" className="py-16 bg-gray-900">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-8">Music</h2>
+          <p className="text-center text-lg mb-8 text-gray-300">
+            Check out my favorite music creations on my YouTube channel!
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Example YouTube Embeds */}
+            <iframe
+              className="w-full aspect-video rounded shadow"
+              src="https://www.youtube.com/embed/f37G5AemF68"
+              title="YouTube video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            <iframe
+              className="w-full aspect-video rounded shadow"
+              src="https://www.youtube.com/embed/EHDHDV4W0Bo"
+              title="YouTube video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            <iframe
+              className="w-full aspect-video rounded shadow"
+              src="https://www.youtube.com/embed/6-3Vd0ZwEj0"
+              title="YouTube video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <div className="text-center mt-8">
+            <a
+              href="https://www.youtube.com/channel/UCEfDZEJ8DBNXhYT5SvxzcOg"
+              className="text-blue-500 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit My YouTube Channel
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="sewing" className="py-16 bg-gray-800">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-8">Sewing Creations</h2>
+          <p className="text-center text-lg mb-8 text-gray-300">
+            Explore some of my before-and-after sewing projects!
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Sewing Creations */}
+            <div className="bg-white text-black rounded shadow p-4">
+              <h3 className="text-xl font-bold mb-2">Project 1</h3>
+              <div className="grid grid-cols-2 gap-4">
+                <img
+                  src="/before1.png"
+                  alt="Before - Project 1"
+                  className="w-full rounded shadow"
+                />
+                <img
+                  src="/after1.png"
+                  alt="After - Project 1"
+                  className="w-full rounded shadow"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </>
   );
 }
