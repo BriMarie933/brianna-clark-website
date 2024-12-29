@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <section id="hero" className="bg-black text-center py-16">
         <div className="parallax">
-          <h1 className="text-5xl font-bold">Brianna Clark's Corner of the World</h1>
+          <h1 className="text-5xl font-bold">Brianna Clark&apos;s Corner of the World</h1>
         </div>
         <p className="mt-4 text-lg">Welcome to my collection of art, photography, and creativity!</p>
       </section>
