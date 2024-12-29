@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <section id="hero" className="bg-black text-center py-16">
         <div className="parallax">
-          <h1 className="text-5xl font-bold">Brianna Clark's Corner of the World</h1>
+          <h1 className="text-5xl font-bold">Brianna Clark&apos;s Corner of the World</h1>
         </div>
         <p className="mt-4 text-lg">Welcome to my collection of art, photography, and creativity!</p>
       </section>
@@ -132,32 +132,33 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="sewing" className="py-16 bg-gray-800">
+      <section id="sewing" className="py-20 bg-gray-800">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-8">Sewing Creations</h2>
-          <p className="text-center text-lg mb-8 text-gray-300">
+          <h2 className="text-5xl font-bold text-center mb-12">Sewing Creations</h2>
+          <p className="text-center text-xl mb-12 text-gray-300">
             Explore some of my before-and-after sewing projects!
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Sewing Creations */}
-            <div className="bg-white text-black rounded shadow p-4">
-              <h3 className="text-xl font-bold mb-2">Project 1</h3>
-              <div className="grid grid-cols-2 gap-4">
+          <div className="flex flex-col items-center">
+            <div className="bg-white text-black rounded shadow-lg p-12 max-w-6xl w-full">
+              <h3 className="text-3xl font-bold mb-8 text-center">Project 1</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <img
                   src="/before1.png"
                   alt="Before - Project 1"
-                  className="w-full rounded shadow"
+                  className="w-full rounded shadow-lg"
                 />
                 <img
                   src="/after1.png"
                   alt="After - Project 1"
-                  className="w-full rounded shadow"
+                  className="w-full rounded shadow-lg"
                 />
               </div>
             </div>
           </div>
         </div>
       </section>
+
+
 
     </>
   );
