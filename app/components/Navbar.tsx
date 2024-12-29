@@ -17,10 +17,10 @@ export default function Navbar() {
               <a href="#" className="hover:text-gray-300">About</a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300">Services</a>
+              <a href="/store" className="hover:text-gray-300">Store</a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300">Contact</a>
+              <a href="/contact" className="hover:text-gray-300">Contact</a>
             </li>
           </ul>
         </nav>
