@@ -1,30 +1,38 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
-    <header className="sticky top-0 bg-black text-white shadow-md z-50">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        {/* Logo */}
-        <div className="text-2xl font-bold">
-          Brianna Clark
-        </div>
-        
-        {/* Links */}
-        <nav>
-          <ul className="flex space-x-6">
-            <li>
-              <a href="#" className="hover:text-gray-300">Home</a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-gray-300">About</a>
-            </li>
-            <li>
-              <a href="/store" className="hover:text-gray-300">Store</a>
-            </li>
-            <li>
-              <a href="/contact" className="hover:text-gray-300">Contact</a>
-            </li>
-          </ul>
-        </nav>
+    <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+      {/* Logo */}
+      <div className="text-2xl font-bold">
+        <Link href="/">Brianna Clark</Link>
       </div>
-    </header>
+      
+      {/* Links */}
+      <nav>
+        <ul className="flex space-x-6">
+          <li>
+            <Link href="/">
+              <span className="hover:text-gray-300">Home</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/about">
+              <span className="hover:text-gray-300">About</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/store">
+              <span className="hover:text-gray-300">Store</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact">
+              <span className="hover:text-gray-300">Contact</span>
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
 }
