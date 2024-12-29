@@ -13,6 +13,9 @@ export default function Home() {
       <section id="art" className="py-16 bg-gray-900">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-8">Art</h2>
+          <p className="text-center text-lg mb-8 text-gray-300">
+          Please <a href="/contact" className="text-blue-500 hover:underline">contact me</a> for any purchases or inquiries about my artwork!
+          </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="bg-white text-black rounded shadow p-4 hover:shadow-lg transition-transform">
               <img

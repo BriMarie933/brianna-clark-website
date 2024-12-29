@@ -10,7 +10,7 @@ body {}
     background-image: url('/photo1.jpg'); /* Replace with the correct path to your image */
     background-size: cover; /* Make sure the image covers the container */
     background-attachment: fixed; /* This makes the parallax effect */
-    background-position: center -500px; /* Moves the image up by 50px */
+    background-position: center -455px; /* Moves the image up by 50px */
     background-repeat: no-repeat; /* Prevent tiling */
     height: 500px; /* Adjust the height as needed */
     display: flex; /* To center content vertically and horizontally */
