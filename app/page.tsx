@@ -14,49 +14,42 @@ export default function Home() {
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-8">Art</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              {
-                src: "/art5.png",
-                alt: "Montana Mountain Scene Ukulele",
-                title: "Montana Mountain Scene Ukulele",
-                price: "$500.00",
-              },
-              {
-                src: "/art2.png",
-                alt: "Montana Mountain Scene Canvas",
-                title: "Montana Mountain Scene Canvas",
-                price: "$100.00",
-              },
-              {
-                src: "/art3.png",
-                alt: "Montana Mountain Scene Canvas",
-                title: "Montana Mountain Scene Canvas",
-                price: "$100.00",
-              },
-              {
-                src: "/art4.png",
-                alt: "Montana Mountain Scene Canvas",
-                title: "Montana Mountain Scene Canvas",
-                price: "$100.00",
-              },
-            ].map((art, index) => (
-              <div
-                key={index}
-                className="bg-white text-black rounded shadow p-4 overflow-hidden"
-              >
-                <div className="relative w-full h-60 overflow-hidden rounded">
-                  <Image
-                    src={art.src}
-                    alt={art.alt}
-                    layout="fill" // Use the full container space
-                    objectFit="cover" // Zoom and crop
-                    objectPosition="0% 5%"  // Center the image
-                  />
-                </div>
-                <h3 className="text-xl font-bold mt-2">{art.title}</h3>
-                <p>{art.price}</p>
-              </div>
-            ))}
+            <div className="bg-white text-black rounded shadow p-4 hover:shadow-lg transition-transform">
+              <img
+                src="/art5.png"
+                alt="Montana Mountain Scene Ukulele"
+                className="w-full rounded hover:scale-105 transition-transform duration-300"
+              />
+              <h3 className="text-xl font-bold mt-2">Montana Mountain Scene Ukulele</h3>
+              <p>$500.00</p>
+            </div>
+            <div className="bg-white text-black rounded shadow p-4 hover:shadow-lg transition-transform">
+              <img
+                src="/art2.png"
+                alt="Montana Mountain Scene Canvas"
+                className="w-full rounded hover:scale-105 transition-transform duration-300"
+              />
+              <h3 className="text-xl font-bold mt-2">Montana Mountain Scene Canvas</h3>
+              <p>$100.00</p>
+            </div>
+            <div className="bg-white text-black rounded shadow p-4 hover:shadow-lg transition-transform">
+              <img
+                src="/art3.png"
+                alt="Montana Mountain Scene Canvas"
+                className="w-full rounded hover:scale-105 transition-transform duration-300"
+              />
+              <h3 className="text-xl font-bold mt-2">Montana Mountain Scene Canvas</h3>
+              <p>$100.00</p>
+            </div>
+            <div className="bg-white text-black rounded shadow p-4 hover:shadow-lg transition-transform">
+              <img
+                src="/art4.png"
+                alt="Montana Mountain Scene Canvas"
+                className="w-full rounded hover:scale-105 transition-transform duration-300"
+              />
+              <h3 className="text-xl font-bold mt-2">Montana Mountain Scene Canvas</h3>
+              <p>$100.00</p>
+            </div>
           </div>
         </div>
       </section>
@@ -132,7 +125,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="sewing" className="py-20 bg-gray-800">
+      <section id="sewing" className="py-20 bg-black">
         <div className="container mx-auto">
           <h2 className="text-5xl font-bold text-center mb-12">Sewing Creations</h2>
           <p className="text-center text-xl mb-12 text-gray-300">
