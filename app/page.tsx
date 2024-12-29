@@ -12,11 +12,49 @@ export default function Home() {
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-8">Art</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="bg-white text-black rounded shadow p-4">
-              <Image src="/art1.jpg" alt="Montana Mountain Scene Ukulele" width={300} height={300} />
-              <h3 className="text-xl font-bold mt-2">Montana Mountain Scene Ukulele</h3>
-              <p>$300.00</p>
-            </div>
+            {[
+              {
+                src: "/art5.png",
+                alt: "Montana Mountain Scene Ukulele",
+                title: "Montana Mountain Scene Ukulele",
+                price: "$500.00",
+              },
+              {
+                src: "/art2.png",
+                alt: "Montana Mountain Scene Canvas",
+                title: "Montana Mountain Scene Canvas",
+                price: "$100.00",
+              },
+              {
+                src: "/art3.png",
+                alt: "Montana Mountain Scene Canvas",
+                title: "Montana Mountain Scene Canvas",
+                price: "$100.00",
+              },
+              {
+                src: "/art4.png",
+                alt: "Montana Mountain Scene Canvas",
+                title: "Montana Mountain Scene Canvas",
+                price: "$100.00",
+              },
+            ].map((art, index) => (
+              <div
+                key={index}
+                className="bg-white text-black rounded shadow p-4 overflow-hidden"
+              >
+                <div className="relative w-full h-60 overflow-hidden rounded">
+                  <Image
+                    src={art.src}
+                    alt={art.alt}
+                    layout="fill" // Use the full container space
+                    objectFit="cover" // Zoom and crop
+                    objectPosition="0% 5%"  // Center the image
+                  />
+                </div>
+                <h3 className="text-xl font-bold mt-2">{art.title}</h3>
+                <p>{art.price}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -33,7 +71,18 @@ export default function Home() {
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-8">Photography</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <Image src="/photo1.jpg" alt="Photo 1" width={300} height={300} className="rounded" />
+            <Image src="/photo13.jpg" alt="Photo 1" width={300} height={300} className="rounded" />
+            <Image src="/photo12.jpg" alt="Photo 1" width={300} height={300} className="rounded" />
+            <Image src="/photo11.jpg" alt="Photo 1" width={300} height={300} className="rounded" />
+            <Image src="/photo10.jpg" alt="Photo 1" width={300} height={300} className="rounded" />
+            <Image src="/photo9.jpg" alt="Photo 1" width={300} height={300} className="rounded" />
+            <Image src="/photo8.jpg" alt="Photo 1" width={300} height={300} className="rounded" />
+            <Image src="/photo7.jpg" alt="Photo 1" width={300} height={300} className="rounded" />
+            <Image src="/photo6.jpg" alt="Photo 1" width={300} height={300} className="rounded" />
+            <Image src="/photo5.jpg" alt="Photo 1" width={300} height={300} className="rounded" />
+            <Image src="/photo4.jpg" alt="Photo 1" width={300} height={300} className="rounded" />
+            <Image src="/photo3.jpg" alt="Photo 1" width={300} height={300} className="rounded" />
+            <Image src="/photo2.jpg" alt="Photo 1" width={300} height={300} className="rounded" />
           </div>
         </div>
       </section>
